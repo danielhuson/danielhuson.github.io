@@ -202,14 +202,11 @@
   
  <!-- Footer -->
 
-        <div class="footer">
-    © <span id="year"></span> Daniel Huson
+      <div class="footer">
+    © <script>
+        document.write(new Date().getFullYear())
+    </script> Daniel Huson
 </div>
-
-<script>
-    document.getElementById("year").textContent =
-        new Date().getFullYear();
-</script>
 
     </div>
 
