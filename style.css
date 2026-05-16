@@ -62,11 +62,11 @@ h1 {
 }
 
 .tagline {
-    margin-top: 18px;
+    margin-top: 14px;
     font-size: 0.72em;
     font-weight: 400;
     letter-spacing: 0.08em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #999;
 }
 /* ---------- Navigation ---------- */
