@@ -123,8 +123,13 @@
         <!-- Footer -->
 
         <div class="footer">
-            © Daniel Huson
-        </div>
+    © <span id="year"></span> Daniel Huson
+</div>
+
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+</script>
 
     </div>
 
