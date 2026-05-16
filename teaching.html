@@ -88,9 +88,14 @@
             for research groups or technical teams.
         </p>
 
-        <div class="footer">
-            © Daniel Huson
-        </div>
+       <div class="footer">
+    © <span id="year"></span> Daniel Huson
+</div>
+
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+</script>
 
     </div>
 
