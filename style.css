@@ -51,6 +51,17 @@ h1 {
     color: #666;
 }
 
+.tagline {
+
+    margin-top: 14px;
+
+    font-size: 0.95em;
+
+    letter-spacing: 0.04em;
+
+    color: #888;
+}
+
 /* ---------- Navigation ---------- */
 
 .navbar {
