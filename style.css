@@ -51,22 +51,12 @@ h1 {
     color: #666;
 }
 
-.subtitle {
-
-    margin-top: 18px;
-
-    font-size: 1.15em;
-    line-height: 1.7;
-
-    color: #666;
-}
-
 .tagline {
     margin-top: 18px;
     font-size: 0.72em;
     font-weight: 400;
     letter-spacing: 0.08em;
-    color: #999;
+    color: #666;
 }
 /* ---------- Navigation ---------- */
 
