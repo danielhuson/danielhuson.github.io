@@ -15,15 +15,48 @@
 <div class="container">
 
     <div class="header">
-        <h1>Daniel H. Huson</h1>
-       <div class="subtitle">
-    Professor of Algorithms in Bioinformatics<br>
-    University of Tübingen
+        <div class="header-layout">
 
-    <div class="tagline">
-        Scientific Software Systems • Bioinformatics • Visualization
-    </div>
-</div>
+            <img alt="portrait photo" class="profile-photo" src="images/daniel-huson.jpg">
+
+            <div>
+                <h1>Daniel H. Huson</h1>
+
+                <div class="subtitle">
+                    Professor of Algorithms in Bioinformatics<br>
+                    University of Tübingen
+
+                    <div class="tagline">
+                        Scientific Software Systems • Bioinformatics • Visualization
+                    </div>
+                </div>
+
+                <div class="icon-links">
+                    <a href="mailto:daniel@huson.de" title="Email">
+                        <img alt="Email" class="icon" src="images/icon-email.svg">
+                    </a>
+                    <a href="h
+                    ttps://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/"
+                       title="University of Tübingen">
+                        <img alt="University" class="icon" src="images/icon-university.svg">
+                    </a>
+
+                    <a href="https://github.com/husonlab" title="GitHub">
+                        <img alt="GitHub" class="icon" src="images/icon-github.svg">
+                    </a>
+
+                    <a href="https://scholar.google.com/citations?user=hLTZTG4AAAAJ&hl=en" title="Google Scholar">
+                        <img alt="Google Scholar" class="icon" src="images/icon-scholar.svg">
+                    </a>
+
+
+                    <a href="https://orcid.org/0000-0002-2961-604X" title="ORCID">
+                        <img alt="Orcid" class="icon" src="images/icon-orcid.svg">
+                    </a>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="navbar">
@@ -40,44 +73,133 @@
         <h2>Contact</h2>
 
         <p class="lead">
-            For collaborations, workshops, software projects, or scientific software consulting,
+            For collaborations, workshops, software projects,
+            scientific visualization systems,
+            or advanced Java development,
             please contact me by email.
         </p>
 
-        <div class="contact-card">
-            <h3>Email</h3>
-            <p>
-                <a href="mailto:daniel@huson.de">daniel@huson.de</a>
-            </p>
-        </div>
+        <!-- Email -->
 
         <div class="contact-card">
-            <h3>Links</h3>
-            <p>
-                Website: <a href="https://danielhuson.github.io">www.huson.de</a><br>
-               Open source software projects: <a href="https://github.com/husonlab">https://github.com/husonlab</a><br>
-            Publications: <a href="https://scholar.google.com/citations?user=hLTZTG4AAAAJ&amp;hl=en">Google Scholar</a><br>
-                University page: <a href="http://www-ab.cs.uni-tuebingen.de">Algorithms in Bioinformatics, University of Tübingen</a>
-            </p>
+
+            <img alt="Email" class="contact-icon" src="images/icon-email.svg">
+
+            <div>
+                <h3>Email</h3>
+
+                <p>
+                    <a href="mailto:daniel@huson.de">
+                        daniel@huson.de
+                    </a>
+                </p>
+            </div>
+
         </div>
 
+        <!-- University -->
+
         <div class="contact-card">
-            <h3>International Collaborations</h3>
-            <p>
-                Available for selected remote collaborations, workshops, block courses,
-                and short-term visiting engagements.
-            </p>
+
+            <img alt="University" class="contact-icon" src="images/icon-university.svg">
+
+            <div>
+                <h3>University of Tübingen</h3>
+
+                <p>
+                    <a href="https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/">
+                        Algorithms in Bioinformatics
+                    </a>
+                </p>
+            </div>
+
         </div>
-<div class="footer">
-    © <script>
-        document.write(new Date().getFullYear())
-    </script> Daniel Huson
-</div>
+
+        <!-- GitHub -->
+
+        <div class="contact-card">
+
+            <img alt="GitHub" class="contact-icon" src="images/icon-github.svg">
+
+            <div>
+                <h3>GitHub / husonlab</h3>
+
+                <p>
+                    <a href="https://github.com/husonlab">
+                        github.com/husonlab
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Scholar -->
+
+        <div class="contact-card">
+
+            <img alt="Google Scholar" class="contact-icon" src="images/icon-scholar.svg">
+
+            <div>
+                <h3>Google Scholar</h3>
+
+                <p>
+                    <a href="https://scholar.google.com/citations?user=hLTZTG4AAAAJ&hl=en">
+                        Publication list and citations
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- ORCID -->
+
+        <div class="contact-card">
+
+            <img alt="Orcid" class="contact-icon" src="images/icon-orcid.svg">
+
+
+            <div>
+                <h3>ORCID</h3>
+
+                <p>
+                    <a href="https://orcid.org/0000-0002-2961-604X">
+                        0000-0002-2961-604X
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Collaborations -->
+
+        <div class="contact-card">
+
+            <img alt="Collaborations" src="images/icon-collaboration.svg" class="contact-icon">
+
+            <div>
+                <h3>International Collaborations</h3>
+
+                <p>
+                    Available for selected remote collaborations,
+                    workshops,
+                    block courses,
+                    scientific software projects,
+                    and short-term visiting engagements.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            © <span id="year"></span> Daniel H. Huson
+        </div>
 
     </div>
-
 </div>
-
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+</script>
 </body>
 
 </html>

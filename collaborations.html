@@ -17,18 +17,48 @@
     <!-- Header -->
 
     <div class="header">
+        <div class="header-layout">
 
-        <h1>Daniel H. Huson</h1>
+            <img alt="portrait photo" class="profile-photo" src="images/daniel-huson.jpg">
 
-       <div class="subtitle">
-    Professor of Algorithms in Bioinformatics<br>
-    University of Tübingen
+            <div>
+                <h1>Daniel H. Huson</h1>
 
-    <div class="tagline">
-        Scientific Software Systems • Bioinformatics • Visualization
-    </div>
-</div>
+                <div class="subtitle">
+                    Professor of Algorithms in Bioinformatics<br>
+                    University of Tübingen
 
+                    <div class="tagline">
+                        Scientific Software Systems • Bioinformatics • Visualization
+                    </div>
+                </div>
+
+                <div class="icon-links">
+                    <a href="mailto:daniel@huson.de" title="Email">
+                        <img alt="Email" class="icon" src="images/icon-email.svg">
+                    </a>
+                    <a href="h
+                    ttps://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/"
+                       title="University of Tübingen">
+                        <img alt="University" class="icon" src="images/icon-university.svg">
+                    </a>
+
+                    <a href="https://github.com/husonlab" title="GitHub">
+                        <img alt="GitHub" class="icon" src="images/icon-github.svg">
+                    </a>
+
+                    <a href="https://scholar.google.com/citations?user=hLTZTG4AAAAJ&hl=en" title="Google Scholar">
+                        <img alt="Google Scholar" class="icon" src="images/icon-scholar.svg">
+                    </a>
+
+
+                    <a href="https://orcid.org/0000-0002-2961-604X" title="ORCID">
+                        <img alt="Orcid" class="icon" src="images/icon-orcid.svg">
+                    </a>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Navigation -->
@@ -146,65 +176,102 @@
 
         <!-- Card -->
 
-     <div class="collaboration-card">
+        <div class="collaboration-card">
 
-    <h3>Example Collaboration: PICL</h3>
+            <h3>Example Collaboration: CatReNet</h3>
 
-    <img src="images/PICL.png" class="software-image medium-image">
+            <img src="images/catrenet.png" class="software-image medium-image">
 
-    <p>
-        Collaboration with
-        Prof. Laura Kubatko
-        at
-      The Ohio State University
-        on the PICL phylogenetics system.
-    </p>
+            <p>
+                Ongoing collaboration with
+                Prof. Mike Steel
+                at the University of Canterbury,
+                together with collaborators including
+                Dr. Joana Xavier
+                and
+                Prof. William Martin and colleagues at the
+                University of Düsseldorf.
+            </p>
 
-    <p>
-        The original PICL C implementation is available at
-        <a href="https://github.com/lkubatko/PICL">
-            github.com/lkubatko/PICL
-        </a>.
-    </p>
+            <p>
+                CatReNet is an interactive visualization and analysis system
+                for catalytic and autocatalytic reaction networks.
+            </p>
 
-    <p>
-        The modernized JavaFX-based graphical system,
-        deployment infrastructure,
-        and cross-platform installers are available as
-        <a href="https://github.com/husonlab/jpicl">
-            https://github.com/husonlab/jpicl
-        </a>.
-    </p>
+            <p>
+                The project originated from mathematical work on catalytic
+                reaction systems and autocatalytic sets,
+                for which various prototype software tools had existed previously.
+                CatReNet was developed to provide an interactive,
+                scalable,
+                and visually accessible platform for exploring such systems.
+            </p>
 
-    <p>
-        Work included GUI design,
-        native-code integration,
-        GitHub Actions workflows,
-        cross-platform installers,
-        and macOS notarization.
-    </p>
+            <p>
+                Current work focuses on extending the CatReNet software system
+                to help address questions concerning
+                the emergence of early life and biochemical evolution.
+            </p>
 
-    <p>
-        This project illustrates a focused scientific software
-        modernization collaboration:
-        transforming advanced computational methods
-        into polished and deployable research software systems.
-    </p>
+        </div>
 
+        <div class="collaboration-card">
 
-</div>
+            <h3>Example Collaboration: JPICL</h3>
+
+            <img src="images/PICL.png" class="software-image medium-image" alt="JPICL screen shot">
+
+            <p>
+                Collaboration with
+                Prof. Laura Kubatko
+                at
+                The Ohio State University
+                on the PICL phylogenetics system.
+            </p>
+
+            <p>
+                The original PICL C implementation is available at
+                <a href="https://github.com/lkubatko/PICL">
+                    github.com/lkubatko/PICL
+                </a>.
+            </p>
+
+            <p>
+                The JavaFX-based graphical interface
+                and cross-platform application system are available as
+                <a href="https://github.com/husonlab/jpicl">
+                    https://github.com/husonlab/jpicl
+                </a>.
+            </p>
+
+            <p>
+                Work included GUI design,
+                native-code integration,
+                GitHub Actions workflows,
+                cross-platform installers,
+                and macOS notarization.
+            </p>
+
+            <p>
+                This project illustrates a focused scientific software collaboration:
+                extending advanced computational methods with graphical interfaces,
+                deployment workflows, and cross-platform application support.
+            </p>
+        </div>
 
         <!-- Footer -->
 
-     <div class="footer">
-    © <script>
-        document.write(new Date().getFullYear())
-    </script> Daniel Huson
-</div>
-
+        <div class="footer">
+            © <span id="year"></span> Daniel H. Huson
+        </div>
     </div>
 
 </div>
+
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+</script>
 
 </body>
 

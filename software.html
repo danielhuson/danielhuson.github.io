@@ -17,18 +17,48 @@
     <!-- Header -->
 
     <div class="header">
+        <div class="header-layout">
 
-        <h1>Daniel H. Huson</h1>
+            <img alt="portrait photo" class="profile-photo" src="images/daniel-huson.jpg">
 
-       <div class="subtitle">
-    Professor of Algorithms in Bioinformatics<br>
-    University of Tübingen
+            <div>
+                <h1>Daniel H. Huson</h1>
 
-    <div class="tagline">
-        Scientific Software Systems • Bioinformatics • Visualization
-    </div>
-</div>
+                <div class="subtitle">
+                    Professor of Algorithms in Bioinformatics<br>
+                    University of Tübingen
 
+                    <div class="tagline">
+                        Scientific Software Systems • Bioinformatics • Visualization
+                    </div>
+                </div>
+
+                <div class="icon-links">
+                    <a href="mailto:daniel@huson.de" title="Email">
+                        <img alt="Email" class="icon" src="images/icon-email.svg">
+                    </a>
+                    <a href="h
+                    ttps://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/"
+                       title="University of Tübingen">
+                        <img alt="University" class="icon" src="images/icon-university.svg">
+                    </a>
+
+                    <a href="https://github.com/husonlab" title="GitHub">
+                        <img alt="GitHub" class="icon" src="images/icon-github.svg">
+                    </a>
+
+                    <a href="https://scholar.google.com/citations?user=hLTZTG4AAAAJ&hl=en" title="Google Scholar">
+                        <img alt="Google Scholar" class="icon" src="images/icon-scholar.svg">
+                    </a>
+
+
+                    <a href="https://orcid.org/0000-0002-2961-604X" title="ORCID">
+                        <img alt="Orcid" class="icon" src="images/icon-orcid.svg">
+                    </a>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Navigation -->
@@ -44,7 +74,7 @@
 
     <!-- Main Content -->
 
-   <div class="content">
+    <div class="content">
 
     <h2>Software Systems</h2>
 
@@ -60,7 +90,7 @@
 
         <h3>MEGAN</h3>
 
-        <img src="images/megan.png" class="software-image">
+        <img src="images/megan.png" class="software-image" alt="MEGAN screenshot">
 
         <p>
             Interactive platform for the analysis and exploration
@@ -83,7 +113,7 @@
 
         <h3>SplitsTree</h3>
 
-        <img src="images/SplitsTree-desktop.png" class="software-image">
+        <img src="images/SplitsTree-desktop.png" class="software-image" alt="SplitsTree screenshot">
 
         <p>
             Interactive analysis and visualization of phylogenetic
@@ -106,7 +136,7 @@
 
         <h3>PhyloSketch</h3>
 
-        <img src="images/phylosketch.png" class="software-image">
+        <img src="images/phylosketch.png" class="software-image" alt="PhyloSketch screenshot">
 
         <p>
             Touch-based system for drawing,
@@ -127,7 +157,7 @@
 
         <h3>CatReNet</h3>
 
-        <img src="images/catrenet.png" class="software-image">
+        <img src="images/catrenet.png" class="software-image" alt="CatReNet screenshot">
 
         <p>
             Visualization and analysis platform
@@ -142,34 +172,34 @@
 
     </div>
 
-       <div class="software-card">
+        <div class="software-card">
 
-    <h3>Tegula</h3>
+            <h3>Tegula</h3>
 
-                   <img src="images/tegula.png" class="software-image">
+            <img src="images/tegula.png" class="software-image" alt="Tegula screenshot">
 
 
-    <p>
-        Interactive visualization and exploration system
-        for periodic tilings of the plane,
-        sphere,
-        and hyperbolic plane.
-    </p>
+            <p>
+                Interactive visualization and exploration system
+                for periodic tilings of the plane,
+                sphere,
+                and hyperbolic plane.
+            </p>
 
-    <p>
-        Tegula allows exploration of a large database
-        of combinatorial tilings using modern
-        JavaFX-based visualization systems.
-    </p>
+            <p>
+                Tegula allows exploration of a large database
+                of combinatorial tilings using modern
+                JavaFX-based visualization systems.
+            </p>
 
-    <p>
-        Related publication:
-        <a href="https://doi.org/10.1016/j.cagd.2021.102027">
-            Tegula – exploring a galaxy of two-dimensional periodic tilings
-        </a>.
-    </p>
+            <p>
+                Related publication:
+                <a href="https://doi.org/10.1016/j.cagd.2021.102027">
+                    Tegula – exploring a galaxy of two-dimensional periodic tilings
+                </a>.
+            </p>
 
-</div>
+        </div>
 
     <!-- Mobile -->
 
@@ -179,9 +209,9 @@
 
         <div class="mobile-gallery">
 
-            <img src="images/SplitsTree-mobile.png" class="mobile-image">
+            <img src="images/SplitsTree-mobile.png" class="mobile-image" alt="SplitsTree on iPad">
 
-            <img src="images/phylosketch-mobile.png" class="mobile-image">
+            <img src="images/phylosketch-mobile.png" class="mobile-image" alt="PhyloSketch on iPad">
 
         </div>
 
@@ -199,15 +229,18 @@
 
     </div>
 
-  
- <!-- Footer -->
+
+        <!-- Footer -->
 
     <div class="footer">
-    © <script>
-        document.write(new Date().getFullYear())
-    </script> Daniel Huson
-</div>
+        © <span id="year"></span> Daniel H. Huson
     </div>
+    </div>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
 
 </div>
 

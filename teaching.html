@@ -11,19 +11,51 @@
 </head>
 
 <body>
-
 <div class="container">
 
     <div class="header">
-        <h1>Daniel H. Huson</h1>
-       <div class="subtitle">
-    Professor of Algorithms in Bioinformatics<br>
-    University of Tübingen
+        <div class="header-layout">
 
-    <div class="tagline">
-        Scientific Software Systems • Bioinformatics • Visualization
-    </div>
-</div>
+            <img alt="portrait photo" class="profile-photo" src="images/daniel-huson.jpg">
+
+            <div>
+                <h1>Daniel H. Huson</h1>
+
+                <div class="subtitle">
+                    Professor of Algorithms in Bioinformatics<br>
+                    University of Tübingen
+
+                    <div class="tagline">
+                        Scientific Software Systems • Bioinformatics • Visualization
+                    </div>
+                </div>
+
+                <div class="icon-links">
+                    <a href="mailto:daniel@huson.de" title="Email">
+                        <img alt="Email" class="icon" src="images/icon-email.svg">
+                    </a>
+                    <a href="h
+                    ttps://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/algorithms-in-bioinformatics/"
+                       title="University of Tübingen">
+                        <img alt="University" class="icon" src="images/icon-university.svg">
+                    </a>
+
+                    <a href="https://github.com/husonlab" title="GitHub">
+                        <img alt="GitHub" class="icon" src="images/icon-github.svg">
+                    </a>
+
+                    <a href="https://scholar.google.com/citations?user=hLTZTG4AAAAJ&hl=en" title="Google Scholar">
+                        <img alt="Google Scholar" class="icon" src="images/icon-scholar.svg">
+                    </a>
+
+
+                    <a href="https://orcid.org/0000-0002-2961-604X" title="ORCID">
+                        <img alt="Orcid" class="icon" src="images/icon-orcid.svg">
+                    </a>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="navbar">
@@ -53,6 +85,13 @@
             </p>
             <p>
                 This course is well suited as an intensive block course or compact professional workshop.
+            </p>
+            <p>
+                I have recently taught this course, and
+                further information, course description, and topics are available on the
+                <a href="https://uni-tuebingen.de/de/293898">
+                    course webpage
+                </a>.
             </p>
         </div>
 
@@ -88,15 +127,17 @@
             for research groups or technical teams.
         </p>
 
-      <div class="footer">
-    © <script>
-        document.write(new Date().getFullYear())
-    </script> Daniel Huson
-</div>
+        <div class="footer">
+            © <span id="year"></span> Daniel H. Huson
     </div>
-
 </div>
 
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</div>
 </body>
 
 </html>
