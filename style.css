@@ -33,6 +33,30 @@ body {
     border-bottom: 1px solid #ececec;
 }
 
+.header-layout {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 36px;
+}
+
+.profile-photo {
+
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid white;
+
+    box-shadow:
+        0 4px 16px rgba(0,0,0,0.12);
+}
+
 h1 {
     margin: 0;
 
@@ -265,4 +289,30 @@ a:hover {
 
     box-shadow:
         0 2px 10px rgba(0,0,0,0.06);
+}
+
+.icon-links {
+
+    display: flex;
+
+    gap: 18px;
+
+    margin-top: 22px;
+}
+
+.icon {
+
+    width: 26px;
+    height: 26px;
+
+    opacity: 0.72;
+
+    transition: all 0.15s ease;
+}
+
+.icon:hover {
+
+    opacity: 1.0;
+
+    transform: translateY(-1px);
 }
