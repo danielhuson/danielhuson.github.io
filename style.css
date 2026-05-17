@@ -361,3 +361,51 @@ a:hover {
 
     font-weight: 500;
 }
+
+@media (max-width: 700px) {
+
+    .header-layout {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        gap: 20px;
+    }
+
+    .profile-photo {
+
+        width: 120px;
+        height: 120px;
+    }
+
+    .subtitle {
+
+        font-size: 1em;
+    }
+
+    .tagline {
+
+        font-size: 0.68em;
+
+        line-height: 1.5;
+    }
+
+    .icon-links {
+
+        justify-content: center;
+    }
+
+    .navbar {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 10px;
+    }
+}
